@@ -27,7 +27,7 @@ output [Obits:0] out_center_der
  );
  wire [Nbits:0] Delay_sig_out;
  wire [Nbits:0] out;
- reg [Nbits:0] out2;
+ reg [Obits:0] out2;
  wire [7:0] C = 8'd180;
  
  //
