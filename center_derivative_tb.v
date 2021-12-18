@@ -21,9 +21,9 @@
 
 
 module center_derivative_tb;
-reg IN_center_der;
-reg clk;
-wire  out_center_der;
+    reg [2:0] IN_center_der;
+    reg clk;
+    wire  [9:0] out_center_der;
 
 center_derivative #(.Nbits(2)) DUT(
     .clk(clk),
@@ -44,7 +44,7 @@ initial begin
 repeat(1) @(posedge clk);
   IN_center_der=2'b10;
 repeat(1) @(posedge clk);
-  #80 IN_center_der=2'b11;
+  #80 IN_center_der=2'b01;
 
 end 
 
